@@ -22,12 +22,23 @@ export default function Home() {
             <h2>Terapista a domicilio</h2>
             <p>Lorenzo professa come fisioterapista dal 2019</p>
           </div>
-          <Image
-            src="/next.svg"
-            width={300}
-            height={300}
-            alt="logo"
-          />
+          <div style={{
+              borderRadius: '50%',
+              overflow: 'hidden',
+              border: '5px solid white',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              width: '300px',
+              height: '300px'
+            }}
+            className='fade-in hover-scale'
+            >
+            <Image
+              src="/main-headshot-2.png"
+              width={300}
+              height={300}
+              alt="logo"
+              />
+          </div>
         </div>
         <div style={{position: 'relative', width: '100%'}}>
           <div className='image-p-container'>

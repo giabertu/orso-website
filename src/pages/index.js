@@ -16,8 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={rubik.className}>
-        <div style={{width: '100%', display:"flex", justifyContent: 'space-evenly', color: 'white'}} className='header-div'>
 
+        <div style={{width: '100%', display:"flex", justifyContent: 'space-evenly', color: 'white'}} className='header-div'>
           <div style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem'}}>
             <h1 className={pacifico.className} style={{fontSize: '3rem', textAlign: 'center'}}>Lorenzo Orsini</h1>
             <h2>Terapista a domicilio</h2>
@@ -32,9 +32,10 @@ export default function Home() {
               alt="logo"
               />
           </div>
-
         </div>
-        <img src='/shape-dividers/basic-triangle-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
+
+        <img src='/shape-dividers/side-triangle-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
+
         <div style={{width: '100%', backgroundColor: 'white', padding: '0rem'}}>
           <div className='image-p-container'>
           <Image
@@ -43,23 +44,27 @@ export default function Home() {
               height={250}
               alt="logo"
               />
+              {/* <img  src='/back-shot.png' style={{width: '20rem'}}/> */}
             <p style={{color: 'black'}}>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
           </div>
-          {/* <img src='/new-wave-bottom.svg' style={{}}/> */}
         </div>
-        <img src='/shape-dividers/paint-brush-top.svg' />
+
+        <img src='/shape-dividers/side-triangle-top.svg' />
+
         <div style={{width: '100%', padding: '1rem'}}>
           <div className='image-p-container'>
             <p>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
             <Image
               src="/hospital-reception.svg"
-              width={250}
-              height={250}
+              width={350}
+              height={350}
               alt="logo"
               />
           </div>
         </div>
+
         <img src='/shape-dividers/paint-brush-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
+
         <div style={{width: '100%', padding: '1rem', backgroundColor: 'white', color: 'black'}}>
           <h2 style={{textAlign: 'center', padding: '1rem'}}>Cosa dicono i clienti</h2>
           <div className='image-p-container'>
@@ -102,6 +107,16 @@ export default function Home() {
                 <p>Lorenzo e un Terapista fenomenale</p>
             </div>
 
+          </div>
+        </div>
+        <img src='/shape-dividers/paint-brush-top.svg' style={{transform: 'translateY(-0.5rem)'}} />
+        <div style={{width: '100%', padding: '1rem'}}>
+          <div className='image-p-container'>
+            
+            <div className='headshot-div fade-in hover-scale' id='backshot' style={{width: 250, height: 255}}>
+                <img src='/back-shot-cropped.png' style={{width: 250, margin: 0, padding: 0}}/>
+            </div>
+              <p>Contattatemi bastardi!</p>
           </div>
         </div>
       </main>

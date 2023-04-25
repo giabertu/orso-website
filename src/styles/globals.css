@@ -18,7 +18,7 @@ a {
 }
 
 * {
-  /* outline: red 1px solid; */
+  /* outline: red 1px solid;s */
   /* background-image: linear-gradient(160deg, #b3e0f2 0%, #89c3eb 50%, #5fa8d3 100%); */
 }
 
@@ -43,8 +43,35 @@ a {
   width: 100%;
 }
 
+.review-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  max-width: 20%;
+  backdrop-filter: blur(5px) brightness(1.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.273);
+  /* background: rgba(255, 255, 255, 0.748); */
+}
+
+.review-card p {
+  max-width: 80% !important;
+  text-align: center;
+}
+
 .image-p-container p {
   max-width: 30%;
+}
+
+.headshot-div {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile and Tablet styles */
@@ -60,6 +87,12 @@ a {
     flex-direction: column;
   }
 
+  .headshot-div img,
+  .headshot-div {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
   .image-p-container {
     flex-direction: column-reverse;
   }
@@ -69,6 +102,10 @@ a {
     max-width: 80%;
     word-wrap: break-word;
     text-align: center;
+  }
+
+  .review-card {
+    max-width: none;
   }
 
 }

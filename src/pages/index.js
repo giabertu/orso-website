@@ -17,21 +17,14 @@ export default function Home() {
       </Head>
       <main className={rubik.className}>
         <div style={{width: '100%', display:"flex", justifyContent: 'space-evenly', color: 'white'}} className='header-div'>
+
           <div style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem'}}>
             <h1 className={pacifico.className} style={{fontSize: '3rem', textAlign: 'center'}}>Lorenzo Orsini</h1>
             <h2>Terapista a domicilio</h2>
             <p>Lorenzo professa come fisioterapista dal 2019</p>
           </div>
-          <div style={{
-              borderRadius: '50%',
-              overflow: 'hidden',
-              border: '5px solid white',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-              width: '300px',
-              height: '300px'
-            }}
-            className='fade-in hover-scale'
-            >
+
+          <div className='headshot-div fade-in hover-scale' style={{width: '300px', height: '300px'}}>
             <Image
               src="/main-headshot-2.png"
               width={300}
@@ -39,8 +32,10 @@ export default function Home() {
               alt="logo"
               />
           </div>
+
         </div>
-        <div style={{position: 'relative', width: '100%'}}>
+        <img src='/shape-dividers/basic-triangle-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
+        <div style={{width: '100%', backgroundColor: 'white', padding: '0rem'}}>
           <div className='image-p-container'>
           <Image
               src="/physiotherapy.svg"
@@ -48,18 +43,66 @@ export default function Home() {
               height={250}
               alt="logo"
               />
-            <p>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
+            <p style={{color: 'black'}}>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
           </div>
           {/* <img src='/new-wave-bottom.svg' style={{}}/> */}
         </div>
-        <div className='image-p-container'>
-          <p>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
-          <Image
-            src="/hospital-reception.svg"
-            width={250}
-            height={250}
-            alt="logo"
-          />
+        <img src='/shape-dividers/paint-brush-top.svg' />
+        <div style={{width: '100%', padding: '1rem'}}>
+          <div className='image-p-container'>
+            <p>askjdfl;aksdjflaksdjflaksdjflaksdjfalskdjfa laksjdflakjsdflk alsjdfalkjf</p>
+            <Image
+              src="/hospital-reception.svg"
+              width={250}
+              height={250}
+              alt="logo"
+              />
+          </div>
+        </div>
+        <img src='/shape-dividers/paint-brush-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
+        <div style={{width: '100%', padding: '1rem', backgroundColor: 'white', color: 'black'}}>
+          <h2 style={{textAlign: 'center', padding: '1rem'}}>Cosa dicono i clienti</h2>
+          <div className='image-p-container'>
+            <div className='review-card'>
+              <div className='headshot-div'>
+                <Image
+                  src="/main-headshot-2.png"
+                  width={100}
+                  height={100}
+                  alt="logo"
+                  />
+                </div>
+                <h2>Elena F.</h2>
+                <p>Lorenzo e un Terapista fenomenale</p>
+            </div>
+
+            <div className='review-card'>
+              <div className='headshot-div'>
+                <Image
+                  src="/main-headshot-2.png"
+                  width={100}
+                  height={100}
+                  alt="logo"
+                  />
+                </div>
+                <h2>Riccardo F.</h2>
+                <p>Lorenzo e un Terapista fenomenale</p>
+            </div>
+
+            <div className='review-card'>
+              <div className='headshot-div'>
+                <Image
+                  src="/main-headshot-2.png"
+                  width={100}
+                  height={100}
+                  alt="logo"
+                  />
+                </div>
+                <h2>Gianni F.</h2>
+                <p>Lorenzo e un Terapista fenomenale</p>
+            </div>
+
+          </div>
         </div>
       </main>
     </>

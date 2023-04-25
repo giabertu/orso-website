@@ -8,6 +8,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-image: url('/subtle-prism-2.svg');
 }
 
 a {
@@ -21,15 +22,57 @@ a {
 }
 
 .header-div {
-  background-image: linear-gradient(160deg, #b3e0f2 0%, #89c3eb 50%, #5fa8d3 100%);
-  padding: 1.2rem
+  /* background-image: linear-gradient(160deg, #b3e0f2 0%, #89c3eb 50%, #5fa8d3 100%); */
+  padding: 1.2rem;
+  min-height: 50vh;
+  align-items: center;
 }
 
 .header-div p {
-  max-width: 80%;
+  /* max-width: 30%; */
   word-wrap: break-word;
   text-align: center;
 }
+
+.image-p-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.2rem;
+  width: 100%;
+}
+
+.image-p-container p {
+  max-width: 30%;
+}
+
+/* Mobile and Tablet styles */
+@media (max-width: 768px) {
+
+  .header-div,
+  .image-p-container {
+    align-items: center;
+    gap: 2rem
+  }
+
+  .header-div {
+    flex-direction: column;
+  }
+
+  .image-p-container {
+    flex-direction: column-reverse;
+  }
+
+  .header-div p,
+  .image-p-container p {
+    max-width: 80%;
+    word-wrap: break-word;
+    text-align: center;
+  }
+
+}
+
+
 
 .hover-up,
 .hover-bg,
@@ -63,15 +106,5 @@ a {
 
   100% {
     opacity: 1;
-  }
-}
-
-
-/* Mobile and Tablet styles */
-@media (max-width: 768px) {
-  .header-div {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem
   }
 }

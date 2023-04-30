@@ -66,45 +66,25 @@ export default function Home() {
         <img src='/shape-dividers/paint-brush-bottom.svg' style={{transform: 'translateY(0.5rem)'}} />
 
         <div style={{width: '100%', padding: '1rem', backgroundColor: 'white', color: 'black'}}>
+
           <h2 style={{textAlign: 'center', padding: '1rem'}}>Cosa dicono i clienti</h2>
           <div className='image-p-container'>
             <div className='review-card'>
-              <div className='headshot-div'>
-                <Image
-                  src="/main-headshot-2.png"
-                  width={100}
-                  height={100}
-                  alt="logo"
-                  />
-                </div>
-                <h2>Elena F.</h2>
-                <p>Lorenzo e un Terapista fenomenale</p>
+                <h3>Giovanna C.</h3>
+                <img src="/star-rating.svg" className='stars'/>
+                <p>Fisioterapista molto giovane ma con professionalità pari ad esperti del settore da diversi anni. Mi hanno colpito fin da subito la sua gentilezza ed il modo di operare mirato alla risoluzione del problema</p>
             </div>
 
             <div className='review-card'>
-              <div className='headshot-div'>
-                <Image
-                  src="/main-headshot-2.png"
-                  width={100}
-                  height={100}
-                  alt="logo"
-                  />
-                </div>
-                <h2>Riccardo F.</h2>
-                <p>Lorenzo e un Terapista fenomenale</p>
+                <h3>Victor Manuel M.</h3>
+                <img src="/star-rating.svg" className='stars'/>
+                <p>Ottimo servizio. Lorenzo è un professionista puntuale, attento ed educato. Si è anche interessato all'evoluzione del mio mal di schiena dopo la sessione, il quale è molto migliorato seguendo le sue indicazioni.</p>
             </div>
 
             <div className='review-card'>
-              <div className='headshot-div'>
-                <Image
-                  src="/main-headshot-2.png"
-                  width={100}
-                  height={100}
-                  alt="logo"
-                  />
-                </div>
-                <h2>Gianni F.</h2>
-                <p>Lorenzo e un Terapista fenomenale</p>
+                <h3>Luca A.</h3>
+                <img src="/star-rating.svg" className='stars'/>
+                <p>Consiglio vivamente Lorenzo [...] Grazie al suo approccio mirato, sono potuto tornare a svolgere le mie attività quotidiane con tranquillità e senza dolori.</p>
             </div>
 
           </div>

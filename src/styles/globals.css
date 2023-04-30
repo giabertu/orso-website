@@ -51,10 +51,14 @@ a {
   gap: 1rem;
   padding: 1.2rem;
   border-radius: 10px;
-  max-width: 20%;
+  max-width: 18%;
   backdrop-filter: blur(5px) brightness(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.273);
   /* background: rgba(255, 255, 255, 0.748); */
+}
+
+.stars {
+  width: 8rem;
 }
 
 .review-card p {
@@ -99,7 +103,7 @@ a {
   }
 
   .image-p-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .header-div p,
@@ -110,7 +114,7 @@ a {
   }
 
   .review-card {
-    max-width: none;
+    max-width: 75%;
   }
 
 }

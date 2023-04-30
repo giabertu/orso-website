@@ -72,7 +72,7 @@ a {
 .headshot-div {
   border-radius: 50%;
   overflow: hidden;
-  outline: 5px solid white;
+  border: 5px solid white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -98,8 +98,11 @@ a {
   .headshot-div {
     width: 12rem !important;
     height: 12rem !important;
-    border-radius: 50% !important;
-    outline: none;
+    /* outline: none; */
+  }
+
+  .headshot-div {
+    /* border-radius: 50% !important; */
   }
 
   .image-p-container {

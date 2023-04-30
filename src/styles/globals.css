@@ -98,7 +98,7 @@ a {
   .headshot-div {
     width: 12rem !important;
     height: 12rem !important;
-    border-radius: 50%;
+    border-radius: 50% !important;
   }
 
   .image-p-container {

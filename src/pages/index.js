@@ -84,7 +84,7 @@ export default function Home() {
             <div className='review-card'>
                 <h3>Luca A.</h3>
                 <img src="/star-rating.svg" className='stars'/>
-                <p> [...] Fisioterapista professionale e attento alle esigenze del paziente. Grazie al suo approccio mirato, sono tornato a svolgere le mie attività quotidiane con tranquillità e senza dolori. Un'esperienza decisamente positiva!</p>
+                <p> [...] Professionale e attento alle esigenze del paziente. Grazie al suo approccio mirato, sono tornato a svolgere le mie attività quotidiane con tranquillità e senza dolori. Un'esperienza positiva!</p>
             </div>
 
           </div>

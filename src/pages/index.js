@@ -24,7 +24,7 @@ export default function Home() {
             <p>Lorenzo professa come fisioterapista dal 2019</p>
           </div>
 
-          <div className='headshot-div fade-in hover-scale' style={{width: '300px', height: '300px'}}>
+          <div className='headshot-div fade-in hover-scale' style={{width: '300px', height: '300px',  borderRadius: '50%'}}>
             <Image
               src="/main-headshot-2.png"
               width={300}
@@ -113,7 +113,7 @@ export default function Home() {
         <div style={{width: '100%', padding: '1rem'}}>
           <div className='image-p-container'>
             
-            <div className='headshot-div fade-in hover-scale' id='backshot' style={{width: 250, height: 255}}>
+            <div className='headshot-div fade-in hover-scale' id='backshot' style={{width: 250, height: 255, borderRadius: '50%'}}>
                 <img src='/back-shot-cropped.png' style={{width: 250, margin: 0, padding: 0}}/>
             </div>
               <p>Contattatemi bastardi!</p>

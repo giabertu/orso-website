@@ -68,7 +68,7 @@ export default function Home() {
         <div style={{width: '100%', padding: '1rem', backgroundColor: 'white', color: 'black'}}>
 
           <h2 style={{textAlign: 'center', padding: '1rem'}}>Cosa dicono i clienti</h2>
-          <div className='image-p-container'>
+          <div className='image-p-container stretch'>
             <div className='review-card'>
                 <h3>Giovanna C.</h3>
                 <img src="/star-rating.svg" className='stars'/>
@@ -78,13 +78,13 @@ export default function Home() {
             <div className='review-card'>
                 <h3>Victor Manuel M.</h3>
                 <img src="/star-rating.svg" className='stars'/>
-                <p>Ottimo servizio. Lorenzo è un professionista puntuale, attento ed educato. Si è anche interessato all'evoluzione del mio mal di schiena dopo la sessione, il quale è molto migliorato seguendo le sue indicazioni.</p>
+                <p>Lorenzo è un professionista puntuale, attento ed educato. Si è anche interessato all'evoluzione del mio mal di schiena dopo la sessione, il quale è molto migliorato seguendo le sue indicazioni.</p>
             </div>
 
             <div className='review-card'>
                 <h3>Luca A.</h3>
                 <img src="/star-rating.svg" className='stars'/>
-                <p>Consiglio vivamente Lorenzo [...] Grazie al suo approccio mirato, sono potuto tornare a svolgere le mie attività quotidiane con tranquillità e senza dolori.</p>
+                <p> [...] Fisioterapista professionale e attento alle esigenze del paziente. Grazie al suo approccio mirato, sono tornato a svolgere le mie attività quotidiane con tranquillità e senza dolori. Un'esperienza decisamente positiva!</p>
             </div>
 
           </div>

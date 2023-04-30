@@ -22,6 +22,10 @@ a {
   /* background-image: linear-gradient(160deg, #b3e0f2 0%, #89c3eb 50%, #5fa8d3 100%); */
 }
 
+.stretch {
+  align-items: stretch !important;
+}
+
 .header-div {
   padding: 1.2rem;
   min-height: 50vh;
@@ -51,7 +55,7 @@ a {
   gap: 1rem;
   padding: 1.2rem;
   border-radius: 10px;
-  max-width: 18%;
+  max-width: 20%;
   backdrop-filter: blur(5px) brightness(1.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.273);
   /* background: rgba(255, 255, 255, 0.748); */
@@ -115,6 +119,10 @@ a {
 
   .review-card {
     max-width: 75%;
+  }
+
+  .stretch {
+    align-items: center !important;
   }
 
 }

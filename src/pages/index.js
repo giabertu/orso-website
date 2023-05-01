@@ -21,7 +21,7 @@ export default function Home() {
           <div style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem'}}>
             <h1 className={pacifico.className} style={{fontSize: '3rem', textAlign: 'center'}}>Lorenzo Orsini</h1>
             <h2>Terapista a domicilio</h2>
-            <p>Lorenzo professa come fisioterapista dal 2019</p>
+            <p>Lorenzo e scarso a cod dalla nascita</p>
           </div>
 
           <div className='headshot-div fade-in hover-scale' style={{width: '300px', height: '300px',  borderRadius: '50%'}}>

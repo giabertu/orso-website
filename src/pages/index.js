@@ -1,12 +1,36 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter, Pacifico, Rubik } from 'next/font/google'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 const pacifico = Pacifico({ subsets: ['latin'], weight: '400'})
 const rubik = Rubik({subsets: ['latin'], weight: '400'})
 
 export default function Home() {
+
+  const [count, setCount] = useState(0)
+
+  const rotatePars = [
+    <div key={count} className='fade-in'>
+      <p>Terapista a domicilio</p>
+    </div>,
+    <div key={count} className='fade-in'>
+      <p>Bologna e provincia</p>
+    </div>
+  ]
+
+  useEffect(()=> {
+    setInterval(() => {
+      console.log('updating count!')
+      setCount(prev => prev+1)
+    }, 3000)
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [])
+
   return (
     <>
       <Head>
@@ -21,7 +45,8 @@ export default function Home() {
           <div style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem'}}>
             <h1 className={pacifico.className} style={{fontSize: '3rem', textAlign: 'center'}}>Lorenzo Orsini</h1>
             <h2>Terapista a domicilio</h2>
-            <p>Lorenzo e scarso a cod dalla nascita</p>
+            {/* <p>Lorenzo e scarso a cod dalla nascita</p> */}
+                {rotatePars[count % 2]}
           </div>
 
           <div className='headshot-div fade-in hover-scale' style={{width: '300px', height: '300px',  borderRadius: '50%'}}>

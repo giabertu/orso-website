@@ -12,16 +12,17 @@ export default function Home() {
   const [count, setCount] = useState(0)
 
   const rotatePars = [
-    <div key={count} className='fade-in'>
-      <p>Terapista a domicilio</p>
+    <div key={count} className='fade-in-up' style={{display: 'flex', gap: '0.5rem'}}>
+      {/* <img src='/physical-therapy.svg' style={{width: '1.5rem'}}/> */}
+      <h2>Terapista a domicilio</h2>
     </div>,
-    <div key={count} className='fade-in'>
-      <p>Bologna e provincia</p>
+    <div key={count} className='fade-in-up' style={{display: 'flex', gap: '0.5rem'}}>
+      <img src='/location-sign.svg' style={{width: '1.5rem'}}/><h2>Bologna e provincia</h2>
     </div>
   ]
 
   useEffect(()=> {
-    setInterval(() => {
+    const intervalId = setInterval(() => {
       console.log('updating count!')
       setCount(prev => prev+1)
     }, 3000)
@@ -44,7 +45,7 @@ export default function Home() {
         <div style={{width: '100%', display:"flex", justifyContent: 'space-evenly', color: 'white'}} className='header-div'>
           <div style={{maxWidth: '90%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '1rem'}}>
             <h1 className={pacifico.className} style={{fontSize: '3rem', textAlign: 'center'}}>Lorenzo Orsini</h1>
-            <h2>Terapista a domicilio</h2>
+            {/* <h2>Terapista a domicilio</h2> */}
             {/* <p>Lorenzo e scarso a cod dalla nascita</p> */}
                 {rotatePars[count % 2]}
           </div>
